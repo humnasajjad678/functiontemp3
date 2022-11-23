@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="tem(); return false">
+        <h1 style="text-align:center ;">TODAY TEMPERATURE</h1><br>
+<label for="temp">ENTER TEMPERATURE</label>
+<input type="number" id="temp"><span id="msg"></span><br><br>
+<button>FIND</button>
+
+
+    </form>
+    <script>
+function tem(){
+    let temp=document.querySelector("#temp").value
+    if(temp<30){
+        document.querySelector("#msg").innerHTML="IT'S A COLD DAY"
+    }
+    if(temp>30){
+        document.querySelector("#msg").innerHTML="IT'S A HOT DAY"
+    }
+    if(temp<5){
+        document.querySelector("#msg").innerHTML="PLZ STAY AT HOME"
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
